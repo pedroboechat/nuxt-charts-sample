@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "yarn lint:js && yarn lint:prettier",
+    "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "0.6.4",
+    "@nuxtjs/eslint-config-typescript": "12.0.0",
+    "@nuxtjs/eslint-module": "4.0.2",
+    "@types/node": "20.2.5",
+    "@types/plotly.js-dist-min": "2.3.1",
+    "@typescript-eslint/parser": "5.57.0",
+    "apexcharts": "3.41.1",
+    "eslint": "8.41.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "nuxt": "3.6.1",
+    "plotly.js-dist-min": "2.24.2",
+    "prettier": "2.8.7",
+    "typescript": "5.0.4",
+    "vue3-apexcharts": "1.4.4",
+    "vuetify": "3.3.6"
+  },
+  "dependencies": {
+    "@invictus.codes/nuxt-vuetify": "0.2.20",
+    "@mdi/font": "7.2.96",
+    "@pinia/nuxt": "0.4.7",
+    "echarts": "5.4.2",
+    "vue-echarts": "6.6.0",
+    "sass": "1.60.0"
+  }
+}

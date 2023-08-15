@@ -1,0 +1,31 @@
+/* Common styles */
+h1.page-title {
+  font-size: xx-large;
+  text-align: center;
+}
+h2.page-subtitle {
+  font-size: x-large;
+  text-align: center;
+}
+h2.card-title {
+  padding-bottom: 5px;
+}
+div.divider {
+  width: 100%;
+  height: 4px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  background-color: #efefef;
+}
+
+/* Hide arrows from 'number' inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}

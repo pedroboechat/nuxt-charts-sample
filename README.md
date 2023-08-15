@@ -1,0 +1,1 @@
+# Nuxt charts sample

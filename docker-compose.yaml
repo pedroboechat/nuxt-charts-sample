@@ -1,0 +1,16 @@
+services:
+  frontend:
+    build:
+      context: "./frontend"
+      dockerfile: "dev.Dockerfile"
+    container_name: "dash-frontend"
+    restart: "unless-stopped"
+    environment:
+      - "HOST=$FRONTEND_HOST"
+      - "PORT=$FRONTEND_PORT"
+      - "NUXT_PUBLIC_BASE_URL=$BASE_URL"
+    ports:
+      - "$FRONTEND_PORT:$FRONTEND_PORT"
+      - "24678:24678"
+    volumes:
+      - "./frontend:/srv/app"
